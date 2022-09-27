@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Younity.in</title>
+  <!-- <link href="style.css" rel="stylesheet"> -->
+  <!-- <link href="responsive1.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- end -->
+
+</head>
+
+<body>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --blue: #2c0573;
+      --secondery-text: #515151;
+      --primary-text: #767676;
+      --green: #01ff85;
+      --black: #243664;
+    }
+
+    /* ==============banner-top section=========================== */
+    .hero-section {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.925), #050b1b);
+      padding: 35px 0px;
+    }
+
+    .banner-top {
+      padding-left: 4rem;
+    }
+
+    h1,
+    h4,
+    h5 {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .section-pt5 {
+      margin-top: 50px;
+    }
+
+    .con-ml4 {
+      margin-left: 4rem;
+    }
+
+    .heading1 {
+      color: var(--green);
+      padding-top: 20px;
+      font-size: 55px;
+      font-weight: 700;
+      text-transform: none;
+      line-height: 1em;
+    }
+
+    .heading-para {
+      font-family: montserrat, Sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .star-icons {
+      color: #01ff85;
+      font-family: montserrat, Sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1em;
+    }
+
+    .star-icons .students-enroll {
+      color: #fff;
+      font-weight: 700;
+      line-height: 2;
+      position: relative;
+    }
+
+    .top-desc {
+      color: #fff;
+      font-family: montserrat, Sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+
+    /* =============banner-bottom design======================== */
+
+
+
+    .feature-container {
+      padding: 1.5rem;
+      border: 2px dotted var(--green);
+    }
+
+    .feature-container p {
+      font-size: 12px;
+      font-weight: 400;
+      height: 50px;
+    }
+
+    .feature-container span i {
+      color: var(--green);
+      font-size: 20px;
+    }
+
+    /* ============container2=============== */
+
+    .title-container2 span .fa-solid {
+      color: var(--green);
+      font-size: 30px;
+    }
+
+    .title-container2 p {
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    /* ============container3============== */
+
+    .title-container3 span .fa-solid {
+      color: var(--green);
+      font-size: 30px;
+    }
+
+    .title-container3 p {
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    /* ==============left  card section======= */
+
+    .div-container {
+      margin-top: 0.5rem;
+      position: fixed;
+      border-radius: 10px;
+      background-color: #000000;
+      top: 10px;
+      color: #fff;
+      border: 0.5px solid #fff;
+    }
+
+    .div-container video {
+      padding: 1rem 2rem;
+      border-radius: 10%;
+    }
+
+    .div-container h5 {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .descr-container ul {
+      padding-left: 0;
+    }
+
+    .icon-clr {
+      color: var(--green);
+    }
+
+    .btn {
+      background: linear-gradient(to right, #38ef7d, #11998e);
+      box-shadow: -2px 3px 10px #01ff8464;
+      border-radius: 10px;
+    }
+
+    .btn button {
+      background: linear-gradient(to right, #38ef7d, #11998e);
+      color: #ffffff;
+      width: 100%;
+      text-align: center;
+      border: 0;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    /* ================== grammar-slider-section============================================================ */
+
+    .grammar-section h1 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--blue);
+      font-family: "Montserrat", sans-serif;
+    }
+
+
+    /* ==========================spoken-english-section============================= */
+
+    .spoken-english h1 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--blue);
+      font-family: "Montserrat", sans-serif;
+    }
+
+    /* ==========================creative-writing-section============================= */
+
+    .creative-writing h1 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--blue);
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .swiper {
+      margin-bottom: 0 !important;
+    }
+
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      bottom: -3px !important;
+    }
+
+    /* ==============================first-form-creation============================================================== */
+
+    .first-form-section {
+      padding: 4rem 2rem;
+      background-color: rgb(186, 246, 186);
+    }
+
+    .first-form-section h3 {
+      color: var(--blue);
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    .first-form-section p {
+      color: var(--secondery-text);
+      font-family: 'Montserrat', sans-serif;
+    }
+
+
+    .first-form-section form input {
+      font-size: 15px;
+      font-family: "Poppins", sans-serif;
+      padding: 10px 15px;
+      border-radius: 10px;
+      border: 0.5px solid green;
+      width: 250px;
+      margin-top: 15px;
+    }
+
+    .select-form select {
+      font-size: 15px;
+      font-family: "Poppins", sans-serif;
+      padding: 10px 15px;
+      border-radius: 10px;
+      border: 0.5px solid green;
+      width: 250px;
+      margin-top: 15px;
+    }
+
+
+    .form-btn {
+      background-color: #000000;
+      padding: 10px 38px;
+      color: #f6f6f6;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      border-radius: 5px;
+      border: none;
+      transition: 0.2s ease-in-out all;
+      margin-top: 15px;
+    }
+
+    .form-btn:hover {
+      background-color: #01ff85;
+      color: #000;
+      border: none;
+    }
+
+    /* ============testimonial-design============================================ */
+    .testimonial-section {
+      width: 60%;
+      height: auto;
+      margin-left: 49px;
+      background-color: #ffffffe4;
+      padding: 50px 0;
+    }
+
+    .testimonial-section h1 {
+      color: var(--blue);
+      font-size: 45px;
+      font-weight: 700;
+    }
+
+    .testimonial-section p {
+      line-height: 1.5;
+      color: #000000;
+      font-size: 20px;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .info-container {
+      display: flex;
+    }
+
+    .info-container img {
+      width: 140px;
+    }
+
+    .info-container h4 {
+      margin-top: 20px;
+      font-size: 30px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .info-container h4::before {
+      content: "";
+      position: absolute;
+      border: 0.5px solid gray;
+      top: -5px;
+      height: 60px;
+      left: 11px;
+    }
+
+    .info-container span {
+      font-size: 25px;
+      color: rgb(235, 235, 4);
+      font-weight: bold;
+      margin-left: 10px;
+      margin-top: 19px;
+    }
+
+    .testimonial-container {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 100px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swip1-wrapper {
+      padding: 30px 70px;
+    }
+
+    /* .swiper-slide video {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  object-fit: cover;
+  margin-bottom: 50px;
+} */
+
+    /* ==============About section design================================ */
+    .about-section {
+      padding: 50px 0;
+    }
+
+    .about-container {
+      margin-left: 100px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right-column {
+      width: 55%;
+    }
+
+    .right-container h1 {
+      color: var(--blue);
+      font-size: 35px;
+      font-weight: 900;
+      margin-bottom: 20px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .right-container span {
+      color: var(--green);
+    }
+
+    .right-container p {
+      padding-top: 5px;
+      color: var(--secondery-text);
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .right-container p span {
+      color: hsl(0, 0%, 0%);
+      font-size: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+    }
+
+    .right-container p span i {
+      margin-right: 10px;
+    }
+
+    /*========certificate design========================  */
+    .crty-container {
+      width: 100%;
+      padding: 30px;
+      margin-bottom: 50px;
+      margin-top: 60px;
+    }
+
+    .img-cont {
+      margin-top: 30px;
+      width: 50%;
+      border: 2px solid #f6eded;
+      border-radius: 20px;
+      box-shadow: 0px -1px 25px rgba(192, 182, 182, 0.676);
+    }
+
+    .crty-container img {
+      width: 70%;
+      padding: 30px;
+    }
+
+    /* ===========about-info================== */
+    .about-info {
+      padding: 70px 0;
+      background-color: #000000;
+      width: 100%;
+      height: auto;
+    }
+
+    .about-info-container {
+      width: 50%;
+      margin-left: 100px;
+      color: #f6eded;
+    }
+
+
+    .right h1 {
+      color: white;
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .right h1 span {
+      color: var(--green);
+    }
+
+    .right p {
+      margin-left: 10px;
+      color: #f6f6f6;
+      font-size: 20px;
+      font-weight: 300;
+      padding: 0px 45px 0px 0px;
+    }
+
+    .btn2 {
+      background: linear-gradient(to right, #38ef7d, #11998e);
+      color: #ffffffec;
+      padding: 10px 100px 10px 100px;
+      text-align: center;
+      border: #01ff85;
+      border-radius: 10px;
+      margin-top: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      box-shadow: -2px 3px 8px #01ff8464;
+      text-decoration: none;
+    }
+
+
+    .btn2:hover {
+      color: #ffffff;
+    }
+
+
+    /* ================faq-new-section========================== */
+    .faq-new-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgb(232, 238, 233);
+      padding: 50px 0;
+    }
+
+    .accordion {
+      width: auto;
+      margin-left: 10px;
+    }
+
+    .accordion .contentBx {
+      position: relative;
+      margin: 10px 20px;
+    }
+
+    .accordion .contentBx .label {
+      position: relative;
+      padding: 10px;
+      background-color: var(--green);
+      color: black;
+      cursor: pointer;
+    }
+
+    .accordion .contentBx .label span {
+      color: var(--blue);
+      font-size: 23px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+    }
+
+    .accordion .contentBx .label::before {
+      content: "+";
+
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      font-size: 1.5em;
+    }
+
+    .accordion .contentBx.active .label::before {
+      content: "-";
+    }
+
+    .accordion .contentBx .content {
+      position: relative;
+      background: #fff;
+      height: 0;
+      overflow: hidden;
+      transition: 0.5s;
+      overflow: auto;
+    }
+
+    .accordion .contentBx.active .content {
+      height: 150px;
+      padding: 10px;
+    }
+
+    .content p {
+      padding: 20px 60px;
+      color: rgb(5, 2, 2);
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Poppins", sans-serif;
+      line-height: 2;
+    }
+
+    /* ===================footer-section============================= */
+    .footer-section {
+      padding: 50px 0;
+      width: 100%;
+      background-color: #000000;
+    }
+
+    .footer {
+      text-align: center;
+    }
+
+    .footer p {
+      color: #f6f6f6;
+      font-size: 20px;
+      font-weight: 300;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      .custom-row {
+        width: 100% !important;
+      }
+
+      .div-container {
+        position: static;
+      }
+
+      .col-md-8 {
+        width: 100% !important;
+      }
+
+      .col-hide {
+        display: none;
+      }
+
+    }
+
+    @media screen and (max-width: 768px) {
+      section {
+        overflow: hidden;
+      }
+
+      .banner-top {
+        padding: 0 10px;
+      }
+
+      .feature-container {
+        margin-top: 10px;
+      }
+
+      .heading1 {
+        font-size: 35px;
+      }
+
+      .div-container video {
+        width: 100%;
+      }
+
+      .right-column {
+        width: 100%;
+      }
+
+      .con-ml4 {
+        margin-left: 10px;
+      }
+
+      .section-pt5 {
+        margin-top: 20px;
+      }
+
+      .about-section {
+        padding-top: 0;
+      }
+
+      .right-container h1 {
+        font-size: 25px;
+      }
+
+      .img-cont {
+        width: 100%;
+      }
+
+      .crty-container {
+        width: 100%;
+        padding: 30px;
+      }
+
+      .crty-container {
+        width: 100%;
+        padding: 30px;
+        margin-top: 0;
+        padding-bottom: 0;
+      }
+
+      .about-info-container {
+        width: 100%;
+        margin-left: 10px;
+      }
+
+      .testimonial-section {
+        padding: 50px 20px;
+        width: 100%;
+        margin-left: 0;
+      }
+
+      .testimonial-section h1 {
+        font-size: 30px;
+      }
+
+      .accordion .contentBx .label span {
+        font-size: 16px;
+      }
+
+      .accordion {
+        margin-left: 0;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .btn2 {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+
+      .right h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+
+  <body>
+    <!-- =====================hero-section======================= -->
+    <section class="hero-section">
+      <div class="container-fluid ">
+        <div class="row">
+          <div class="col-md-8 custom-row">
+            <div class="banner-top">
+              <h1 class="heading1">
+                <span style="color: #fff;">COMPLETE</span>
+                <span class="heading-color">GUIDE ON ENGLISH SPEAKING
+                  & WRITING</span>
+              </h1>
+              <h4 class="heading-para">by Education Professionals of Younity</h4>
+              <h5 class="star-icons">4.78 <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                    class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                    class="fa-solid fa-star"></i></span> <span class="students-enroll">| 7233+ students</span> </h5>
+              <p class="top-desc">Learn everything that you need, from grammer, spoken english to creative
+                writing, all in just 30 hours</p>
+            </div>
+
+            <div class="banner-top row py-4">
+              <div class="col-md-4 banner-features">
+                <div class="feature-container text-center">
+                  <span><i class="fa-solid fa-spell-check"></i></span>
+                  <hr style="color: var(--green);">
+                  <h5 class="text-white py-2">GRAMMAR</h5>
+                  <p class="text-white"> Learn in-depth knowledge on organising and make them meaningful </p>
+                </div>
+              </div>
+              <div class="col-md-4 banner-features">
+                <div class="feature-container text-center">
+                  <span><i class="fa-solid fa-person"></i></span>
+                  <hr style="color: var(--green);">
+                  <h5 class="text-white py-2">SPOKEN ENGLISH</h5>
+                  <p class="text-white">Learn how to "talk the talk" fluently and confidently without being talked out
+                    of it</p>
+                </div>
+              </div>
+              <div class=" col-md-4 banner-features">
+                <div class="feature-container text-center">
+                  <span><i class="fa-solid fa-pen"></i></span>
+                  <hr style="color: var(--green);">
+                  <h5 class="text-white py-2">CREATIVE WRITING</h5>
+                  <p class="text-white">Learn how to get ideas out of your mind through creativity & practice</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="side-fixed">
+              <div class="div-container">
+                <video width="400" controls>
+                  <source src="video.mp4" type="video/mp4">
+                  <source src="mov_bbb.ogg" type="video/ogg">
+                </video>
+                <h5 class="my-4">This course will include</h5>
+                <div class="descr-container px-4">
+                  <ul>
+                    <li class="list-unstyled">
+                      <i class="fa-solid fa-clock icon-clr"></i> </span> 30 Hours of Content in English
+                    </li>
+                    <li class="list-unstyled">
+                      <i class="fa-solid fa-bookmark icon-clr"></i> </span> 3 Categories: Grammar, Spoken English &<br>
+                      Creating
+                      Writing
+                    </li>
+                    <li class="list-unstyled">
+                      <i class="fa-solid fa-heart icon-clr"></i> </span> 1 Year Access
+                    </li>
+                    <li class="list-unstyled">
+                      <i class="fa-solid fa-users icon-clr"></i> </span> Community support with over <br>50,000+
+                      students
+                    </li>
+                    <li class="list-unstyled">
+                      <i class="fa-solid fa-file-arrow-down icon-clr"></i> </span> Downloadable Notes
+                    </li>
+                    <li class="list-unstyled">
+                      <i class="fa-solid fa-bookmark icon-clr"></i> </span> Assignments and Projects
+                    </li>
+                    <li class="list-unstyled">
+                      <i class="fa-solid fa-laptop icon-clr"></i> </span> Regular Doubts Solving Sessions
+                    </li>
+                    <li class="list-unstyled">
+                      <i class="fa-solid fa-book icon-clr"></i> </span> Certificate upon completion
+                    </li>
+                  </ul>
+                </div>
+                <div class="btn d-grid mx-4 mb-3">
+                  <a htef="https://learn.younity.in/s/pages/internships"><button> GET IT NOW </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =============grammar first section======================-->
+
+    <section class="grammar-section section-pt5 container-fluid">
+      <div class="row">
+        <div class="col-md-8 swip1-wrapper">
+          <h1>GRAMMAR</h1>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="sessions1.jpg" alt="" class="swiper-img img-fluid"></div>
+              <div class="swiper-slide"><img src="sessions2.jpg" alt="" class="swiper-img img-fluid"></div>
+              <div class="swiper-slide"><img src="sessions3.jpg" alt="" class="swiper-img img-fluid"></div>
+              <div class="swiper-slide"> <img src="sessions4.jpg" alt="" class="swiper-img img-fluid"> </div>
+              <div class="swiper-slide"><img src="sessions5.jpg" alt="" class="swiper-img img-fluid"> </div>
+              <div class="swiper-slide"><img src="sessions6.jpg" alt="" class="swiper-img img-fluid"> </div>
+              <div class="swiper-slide"> <img src="sessions7.jpg" alt="" class="swiper-img img-fluid"></div>
+              <div class="swiper-slide"> <img src="sessions8.jpg" alt="" class="swiper-img img-fluid"> </div>
+              <div class="swiper-slide"> <img src="sessions9.jpg" alt="" class="swiper-img img-fluid"> </div>
+              <div class="swiper-slide"> <img src="sessions10.jpg" alt="" class="swiper-img img-fluid"> </div>
+            </div>
+            <div class="swiper-pagination">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-hide"></div>
+      </div>
+    </section>
+
+
+    <!-- ====================spoken english================== -->
+    <section class="spoken-english section-pt5 container-fluid">
+      <div class="row">
+        <div class="col-md-8 swip1-wrapper">
+          <h1>SPOKEN ENGLISH</h1>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"> <img src="eng-sess1.jpg" class="swiper-img img-fluid alt="> </div>
+              <div class="swiper-slide"> <img src="eng-sess2.jpg" class="swiper-img img-fluid alt="> </div>
+              <div class="swiper-slide"> <img src="eng-sess3.jpg" class="swiper-img img-fluid alt="> </div>
+              <div class="swiper-slide"> <img src="eng-sess4.jpg" class="swiper-img img-fluid alt="> </div>
+              <div class="swiper-slide"> <img src="eng-sess5.jpg" class="swiper-img img-fluid alt="> </div>
+              <div class="swiper-slide"> <img src="eng-sess6.jpg" class="swiper-img img-fluid alt="> </div>
+              <div class="swiper-slide"> <img src="eng-sess7.jpg" class="swiper-img img-fluid alt="> </div>
+              <div class="swiper-slide"> <img src="eng-sess-8.jpg" class="swiper-img img-fluid alt="> </div>
+              <div class="swiper-slide"> <img src="eng-sess-9.jpg" class="swiper-img img-fluid alt="> </div>
+              <div class="swiper-slide"> <img src="eng-sess-10.jpg" class="swiper-img img-fluid alt="> </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="col-md-4 col-hide">
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ===========CREATIVE WRITING================= -->
+
+    <section class="creative-writing section-pt5 container-fluid">
+      <div class="row">
+        <div class="col-md-8 swip1-wrapper">
+          <h1>CREATIVE WRITING</h1>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"> <img src="cont-sess1.jpg" class="img-fluid swiper-img" alt=""> </div>
+              <div class="swiper-slide"> <img src="cont-sess2.jpg" class="img-fluid swiper-img" alt=""> </div>
+              <div class="swiper-slide"> <img src="cont-sess3.jpg" class="img-fluid swiper-img" alt=""> </div>
+              <div class="swiper-slide"> <img src="cont-sess4.jpg" class="img-fluid swiper-img" alt=""> </div>
+              <div class="swiper-slide"> <img src="cont-sess5.jpg" class="img-fluid swiper-img" alt=""> </div>
+              <div class="swiper-slide"> <img src="cont-sess6.jpg" class="img-fluid swiper-img" alt=""> </div>
+              <div class="swiper-slide"> <img src="cont-sess7.jpg" class="img-fluid swiper-img" alt=""> </div>
+              <div class="swiper-slide"> <img src="cont-sess8.jpg" class="img-fluid swiper-img" alt=""> </div>
+              <div class="swiper-slide"> <img src="cont-sess9.jpg" class="img-fluid swiper-img" alt=""> </div>
+              <div class="swiper-slide"> <img src="cont-sess10.jpg" class="img-fluid swiper-img" alt=""> </div>
+            </div>
+            <div class="swiper-pagination">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-hide"></div>
+      </div>
+
+    </section>
+    <!-- ====================new form creation================================= -->
+    <section class="first-form-section section-pt5 container-fluid">
+      <div class="row">
+        <div class="col-md-8 con-ml4">
+          <div class="first-form-container">
+            <h3>Free Counselling Session</h3>
+            <p> Enter your phone number and book a FREE Counselling session!</p>
+
+            <form class="row g-3">
+              <div class="com-md-8">
+                <input type="text" id="fname" name="name" placeholder=" Your Name">
+
+                <input type="email" id="fname" name="email" placeholder="Your Email Id">
+                <div class="select-form">
+                  <select id="city">
+                    <option value="volvo">+91</option>
+                    <option value="opel">+93(Afghanishtan)</option>
+                    <option value="audi">+355(Albania)</option>
+                    <option value="opel">+213(Algeria)</option>
+                    <option value="audi">+1684(American Samoa)</option>
+                    <option value="opel">+54(Argentina)</option>
+                    <option value="audi">+374(Armenia)</option>
+                    <option value="opel">+61(Australia)</option>
+                    <option value="audi">+501(Belize)</option>
+                    <option value="opel">+32(Belgium)</option>
+                    <option value="audi">+975(Bhutan)</option>
+
+                  </select>
+                  <input type="number" id="fname" name="name" placeholder=" Your Number ">
+                </div>
+                <button class="form-btn"> BOOK YOUR SLOT</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+      </div>
+    </section>
+
+    <!-- =======================about section======================================================= -->
+
+    <section class="about-section section-pt5">
+      <div class="container-fluid">
+        <div class="right-column">
+          <div class="right-container con-ml4">
+            <h1>
+              We got everything covered from english Speaking to writing in <span> Just 30 hrs</span>
+            </h1>
+            <p><span><i class="fa-solid fa-address-book"></i></span> Earn a certificate after successful completion of
+              the
+              course </p>
+            <p><span><i class="fa-solid fa-volume-xmark"></i></span> Be a master of spoken and written english</p>
+            <p> <span><i class="fa-brands fa-linkedin"></i></span> Share the earned certificate on Linkedln to build
+              your
+              personal brand</p>
+
+          </div>
+        </div>
+
+        <div class="crty-container con-ml4">
+          <div class="img-cont">
+            <img src="certificate.jpg" alt="img-error">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===============b-about-info========================== -->
+    <section class="about-info">
+      <div class="about-info-container">
+
+        <div class="right">
+          <h1>
+            WHY CHOOSE <span> YOUNITY.IN ?</span>
+          </h1>
+          <p><span><i class="fa-solid fa-circle"></i></span> 2 Way Communication </p>
+          <p> <span><i class="fa-solid fa-circle"></i></span> Pocket Friendly
+            Hardcopy Workbook Provided </p>
+          <p><span><i class="fa-solid fa-circle"></i></span> Certificate after successful completion of the course </p>
+          <a href="https://younity.in" class="btn2">Recordings are provided to all enrollee!!</a>
+        </div>
+      </div>
+    </section>
+    <!-- =================================testimonial-section================================================================= -->
+    <section class="testimonial-section">
+      <h1>Ratings & Reviews by learners</h1>
+      <p>Skill-Younity has received honest feedback from our learners around the globe.</p>
+      <div class="info-container">
+        <img src="Google.png">
+        <h4> 4.8 </h4>
+        <span><i class="fa-solid fa-star"></i></span>
+        <span><i class="fa-solid fa-star"></i></span>
+        <span><i class="fa-solid fa-star"></i></span>
+        <span><i class="fa-solid fa-star"></i></span>
+        <span><i class="fa-solid fa-star"></i></span>
+      </div>
+      <div class="testimonial-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <video width="100%
+              " controls>
+                <source src="video2.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+
+              </video>
+            </div>
+            <div class="swiper-slide">
+
+              <video width="100%
+              " controls>
+                <source src="video2.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+
+              </video>
+            </div>
+            <div class="swiper-slide">
+
+              <video width="100%
+              " controls>
+                <source src="video2.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <video width="100%
+              " controls>
+                <source src="video2.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <video width="100%
+              " controls>
+                <source src="video2.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <video width="100%
+              " controls>
+                <source src="video2.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <video width="100%
+              " controls>
+                <source src="video2.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+
+              </video>
+            </div>
+            <div class="swiper-slide"> <video width="100%
+              " controls>
+                <source src="video2.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+
+              </video></div>
+            <div class="swiper-slide"> <video width="100%
+              " controls>
+                <source src="video2.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+
+              </video>
+            </div>
+          </div>
+          <div class="swiper-pagination">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============faq-new-section=========================== -->
+    <section class="faq-new-section section-pt5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="accordion">
+              <div class="contentBx">
+                <div class="label"><span>What is Younity?</span></div>
+                <div class="content">
+                  <p>
+                    Younity is an ecosystem which focuses on 3 P’s of every student’s life i.e. Professional,
+                    Personality
+                    and Personal. We are currently working under two categories of Younity Community and Younity
+                    LiveLearners wherein we are providing live interaction two-way communication sessions to the
+                    students
+                    with an aim to disrupt the market of education technology industry by filling the space for
+                    curiosity
+                    and doubt solving for the students.
+                  </p>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label"><span>What is Younity LiveLearn?</span></div>
+                <div class="content">
+                  <p>Younity LiveLearn means learning the content of the courses and membership through 100% live
+                    interactive sessions with complete recording assistance by industry experts. </p>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label"><span>Are these courses certified?</span></div>
+                <div class="content">
+                  <p>Government Recognition: Our all certificates have a stamp of Startup India which is a government
+                    initiative as we are registered with them.<br>
+
+                    Verified: Receive a mentor signed certificate with Younity’s official logo to verify your
+                    certificates
+                    and increase value to your career and experience. <br>
+
+                    Licences & Certification Approved: Post your certificate on your LinkedIn profile under the category
+                    of
+                    Licences & Certification to increase your job prospects.<br>
+
+                    Lifetime Validity: Get lifetime valid certificates to enhance your professional credibility forever.
+                  </p>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label"><span>Can't I find the same content for free on Youtube and other social
+                    media?</span>
+                </div>
+                <div class="content">
+                  <p>No, because Youtube doesn’t provide live interactive sessions and doubt solving assistance with
+                    industry experts. </p>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label"><span>What will be the process once I pay for the Program?</span> </div>
+                <div class="content">
+                  <p>After the payment for the program, you will receive a confirmation mail immediately and will get
+                    added
+                    to the respective group immediately for all the session links and updates. You will also receive
+                    updates
+                    via email. </p>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label"><span>Is there internship and placement assistance provided after each course?</span>
+                </div>
+                <div class="content">
+                  <p>Yes, there is complete summer and winter internship assistance where our mentors will recommend you
+                    to
+                    various companies on the basis of the evaluation of your skills and personality.</p>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label"><span> Do we get any practical exposure?</span></div>
+                <div class="content">
+                  <p>Yes, our curriculum is designed and curated which matches the JDs of 75% MNCs with 70% practical
+                    exposure and 30% theory assistance. Moreover, our mentors teach with a practical learning approach
+                    and
+                    give insights about the domain to make an individual job ready.</p>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label"><span>Is this courses going to be Live or Pre-recorded</span></div>
+                <div class="content">
+                  <p>The course will be completely live as we promote the actual learning of 2-way communication.
+                    However,
+                    we also provide recordings after every session for future reference irrespective of whether you have
+                    attended or not.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section>
+    <!-- ================footer-section============== -->
+    <section class="footer-section">
+      <div class="footer">
+        <img src="logo.png">
+        <p>All rights reserved |
+          Privacy Policy</p>
+      </div>
+    </section>
+    <!-- ========================================================================== -->
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      breakpoints: {
+        280: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        650: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <!-- ================faq-javascript========================================== -->
+  <script>
+    const accordion = document.getElementsByClassName
+      ('contentBx');
+    for (i = 0; i < accordion.length; i++) {
+
+      accordion[i].addEventListener('click', function () {
+        this.classList.toggle('active')
+      })
+    }
+  </script>
+  <!-- ========================bootstrap============================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+    crossorigin="anonymous"></script>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
